@@ -3,3 +3,5 @@
 [user]
 	name = Christian Bundy
 	email = me@christianbundy.com
+[credential]
+	helper = osxkeychain
