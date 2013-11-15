@@ -16,3 +16,5 @@ Icon
 # Secrets don't make friends
 .secrets
 .zhistory
+.bash_history
+
