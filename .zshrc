@@ -14,7 +14,7 @@ fi
 eval "$(fasd --init auto)"
 
 # Aliases are fun
-source .alias
+source .aliases
 
 # Wouldn't want these getting into the wrong hands...
 source .secrets
