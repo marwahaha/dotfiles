@@ -1,5 +1,5 @@
 # My screen isn't big enough for a dock.
-defaults write com.apple.dock autohide-time-modifier -int 50;
+defaults write com.apple.dock autohide-time-modifier -int 100;
 # Yeah and nobody needs the dashboard. Come on.
 defaults write com.apple.dashboard mcx-disabled -boolean true
 killall Dock
