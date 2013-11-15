@@ -1,0 +1,3 @@
+# My screen isn't big enough for a dock.
+defaults write com.apple.dock autohide-time-modifier -int 50;
+killall Dock
