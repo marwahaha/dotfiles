@@ -1,0 +1,4 @@
+fasd
+git
+hub
+zsh
