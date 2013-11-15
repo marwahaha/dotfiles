@@ -5,3 +5,5 @@
 	email = me@christianbundy.com
 [credential]
 	helper = osxkeychain
+[push]
+	default = simple
