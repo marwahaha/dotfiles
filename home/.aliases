@@ -3,3 +3,6 @@ alias g=hub
 
 # Autojump!
 alias j=z
+
+# Shortcut for sublime text 3
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
