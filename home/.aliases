@@ -1,2 +1,4 @@
 alias g=hub
 alias j=z
+unalias rm
+alias rm='nocorrect rm'
