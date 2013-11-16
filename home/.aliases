@@ -1,4 +1,5 @@
+# Hub, an GitHub extension of the `git` command
 alias g=hub
+
+# Autojump!
 alias j=z
-unalias rm
-alias rm='nocorrect rm'
