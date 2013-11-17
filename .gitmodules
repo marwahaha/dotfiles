@@ -3,4 +3,4 @@
 	url = https://github.com/clvv/fasd
 [submodule "vendor/prezto"]
 	path = vendor/prezto
-	url = https://github.com/christianbundy/prezto
+	url = https://github.com/sorin-ionescu/prezto
