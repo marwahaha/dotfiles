@@ -6,12 +6,13 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.homesick/repos/dotfiles/vendor/zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.homesick/repos/dotfiles/vendor/.zprezto/init.zsh"
+if [[ -s "${ZDOTDIR:-$HOME}/.homesick/repos/dotfiles/vendor/prezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.homesick/repos/dotfiles/vendor/prezto/init.zsh"
 fi
 
 # Everybody loves fasd
-eval "$(fasd --init auto)"
+#source "${ZDOTDIR:-$HOME}/.homesick/repos/dotfiles/vendor/fasd/fasd"
+#eval "$(fasd --init auto)"
 
 # Aliases are fun
 source .aliases
