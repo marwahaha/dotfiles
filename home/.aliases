@@ -1,5 +1,9 @@
 # Hub, an GitHub extension of the `git` command
-alias g=hub
+if (( $+commands[hub] )); then
+  alias g=hub
+else
+	alias g=git
+fi
 
 # Autojump!
 alias j=z
