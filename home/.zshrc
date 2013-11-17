@@ -18,6 +18,9 @@ eval "$(fasd --init auto)"
 source .aliases
 
 # Wouldn't want these getting into the wrong hands...
-source .secrets
+if [ -f ".secrets" ]
+then
+    source .secrets
+fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
