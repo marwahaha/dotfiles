@@ -10,3 +10,6 @@ alias j=z
 
 # Shortcut for sublime text 3
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+# Always more fortune. Always.
+alias clear="command clear; fortune -a; print;"
