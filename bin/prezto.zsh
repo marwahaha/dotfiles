@@ -2,11 +2,11 @@
 
 setopt EXTENDED_GLOB
 
-# If zprezto doesn't already exist, clone it.
+sudo -u vagrant -s zsh
+
 VAGRANT_SHARE="/vagrant"
 VAGRANT_HOME="/home/vagrant"
-
-su vagrant
+HOME="/home/vagrant/"
 
 echo "==> Downloading Prezto..."
 if [[ (! -d $VAGRANT_HOME"/.zprezto")]]; then
@@ -14,7 +14,7 @@ if [[ (! -d $VAGRANT_HOME"/.zprezto")]]; then
 fi
 
 echo "==> Downloading NeoBundle..."
-git clone -q https://github.com/Shougo/neobundle.vim $VAGRANT_HOME/.vim/bundle/neobundle.vim
+git clone -q https://github.com/Shougo/neobundle.vim "$VAGRANT_HOME/.vim/bundle/neobundle.vim"
 
 # Default Prezto dotfiles
 echo "==> Symlinking Prezto dotfiles..."
