@@ -8,6 +8,12 @@ endif
 " Required:
 call neobundle#rc(expand('~/.vim/bundle/'))
 
+let base16colorspace=256  " Access colors present in 256 colorspace
+
+" Set theme
+NeoBundle 'chriskempson/base16-vim'
+"colorscheme base16-tomorrow
+
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -42,6 +48,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set number
+set paste
+set background=dark
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
