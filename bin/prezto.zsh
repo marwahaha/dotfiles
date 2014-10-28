@@ -34,6 +34,9 @@ curl https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash 
 echo "Installing RVM..."
 curl -sSL https://get.rvm.io | bash -s stable >> /vagrant/provision.log 2>&1
 
+echo "Installing Vim plugins..."
+vim +NeoBundleInstall +qall
+
 echo "Setting default shell..."
 chsh -s /bin/zsh vagrant >> /vagrant/provision.log 2>&1
 
