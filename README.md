@@ -12,8 +12,12 @@ An opinionated command-line development environment.
 * Zsh
 * Prezto
 * Vim
-* NeoBundle
-
+* Vundle
+* RVM
+* Ruby
+* NVM
+* Node.js
+* Meteor
 
 ## Usage
 
