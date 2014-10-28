@@ -2,8 +2,8 @@
 echo "==> Updating package manager..."
 apt-get update
 
-echo "==> Installing Git and Zsh..."
+echo "==> Installing packages..."
 apt-get install -y zsh git fortune cowsay
 
-# Run commands as vagrant
-sudo -u vagrant /vagrant/bin/vagrant.zs
+# Run vagrant.zsh as vagrant
+runuser -l vagrant -c '/vagrant/bin/vagrant.zsh'
