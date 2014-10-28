@@ -29,7 +29,7 @@ for rcfile in $VAGRANT_SHARE/dotfiles/*; do
 done
 
 echo "Installing NVM..."
-curl https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash >> /vagrant/provision.log 2>&1
+curl -sSL https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash 2>&1 >> /vagrant/provision.log 
 
 echo "Installing RVM..."
 curl -sSL https://get.rvm.io | bash -s stable >> /vagrant/provision.log 2>&1
