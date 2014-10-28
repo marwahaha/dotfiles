@@ -38,3 +38,4 @@ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shel
 
 echo "==> Done!"
 (tmux attach 2>&1 > /dev/null || tmux 2>&1 > /dev/null) && exit
+clear
