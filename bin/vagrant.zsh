@@ -34,3 +34,4 @@ source ~/.nvm/nvm.sh
 nvm install $(cat "$SHARE/dotfiles/nvmrc")
 
 echo "==> Done!"
+(tmux attach 2>&1 > /dev/null || tmux 2>&1 > /dev/null) && exit
