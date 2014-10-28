@@ -6,7 +6,7 @@ echo "==> Installing packages..."
 apt-get install -y zsh git fortune cowsay
 
 # Change default shell for vagrant
-chsh -s $(where zsh | head -n 1) vagrant
+chsh -s $(which zsh) vagrant
 
 # Run vagrant.zsh as vagrant
-runuser -l vagrant -c '/vagrant/bin/vagrant.zsh'
+sudo -u vagrant "/vagrant/bin/vagrant.zsh"

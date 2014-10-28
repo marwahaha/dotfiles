@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-
+HOME="/home/vagrant"
 SHARE="/vagrant"
 
 echo "==> Installing Prezto..."
@@ -29,7 +29,11 @@ for rcfile in $SHARE/dotfiles/*; do
   ln -sf "$rcfile" "$HOME/.${rcfile:t}"
 done
 
+echo "==> Install Base16 Shell"
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
 echo  "==> Installing Node..."
+source ~/.nvm/nvm.sh
 nvm install $(cat "$SHARE/dotfiles/nvmrc")
 
 echo "==> Done!"

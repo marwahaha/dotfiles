@@ -14,12 +14,5 @@
   fi
 } &!
 
-# Print a random, hopefully interesting, adage.
-if (( $+commands[fortune] )); then
-  if [[ -t 0 || -t 1 ]]; then
-    fortune -a
-    print
-  fi
-fi
-
-(tmux attach || tmux) && exit
+(tmux attach 2>&1 > /dev/null || tmux 2>&1 > /dev/null) && exit
+clear
