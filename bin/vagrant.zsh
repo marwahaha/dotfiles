@@ -9,11 +9,8 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -sf "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-echo "==> Installing NeoBundle..."
-git clone -q https://github.com/Shougo/neobundle.vim "$HOME/.vim/bundle/neobundle.vim"
-
-echo "==> Installing NeoBundle plugins..."
-"$HOME/.vim/bundle/neobundle.vim/bin/neoinstall"
+echo "==> Installing Vundle..."
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "==> Installing NVM..."
 curl -sSL https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash

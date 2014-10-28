@@ -28,7 +28,7 @@ PAGER=less
 source ~/.nvm/nvm.sh
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Print a random, hopefully interesting, adage.
 if (( $+commands[fortune] )); then

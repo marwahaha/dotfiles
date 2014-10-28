@@ -26,6 +26,12 @@ vagrant up
 vagrant ssh
 ```
 
+Once you're logged in, run the user development environment provisioning.
+
+```sh
+/vagrant/bin/vagrant.zsh 
+```
+
 ## Support
 
 I'm not currently maintaining this project for public usage, but if you find an issue I'd love to hear aboutit.
