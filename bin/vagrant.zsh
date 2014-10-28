@@ -17,7 +17,6 @@ echo "==> Installing NeoBundle plugins..."
 
 echo "==> Installing NVM..."
 curl -sSL https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash
-nvm install $(cat "$SHARE/dotfiles/nvmrc")
 
 echo "==> Installing RVM..."
 curl -sSL https://get.rvm.io | bash -s stable
@@ -29,5 +28,8 @@ echo "==> Symlinking custom dotfiles..."
 for rcfile in $SHARE/dotfiles/*; do
   ln -sf "$rcfile" "$HOME/.${rcfile:t}"
 done
+
+echo  "==> Installing Node..."
+nvm install $(cat "$SHARE/dotfiles/nvmrc")
 
 echo "==> Done!"
