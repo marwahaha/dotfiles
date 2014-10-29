@@ -16,3 +16,13 @@
 
 (tmux attach 2>&1 > /dev/null || tmux 2>&1 > /dev/null) && exit
 clear
+
+# Print a random, hopefully interesting, adage.
+if (( $+commands[fortune] )); then
+  if [[ -t 0 || -t 1 ]]; then
+    fortune -sn 140
+    print
+  fi
+fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

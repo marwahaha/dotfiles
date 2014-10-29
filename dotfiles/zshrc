@@ -30,10 +30,3 @@ source ~/.nvm/nvm.sh
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-# Print a random, hopefully interesting, adage.
-if (( $+commands[fortune] )); then
-  if [[ -t 0 || -t 1 ]]; then
-    fortune -sn 140
-    print
-  fi
-fi
