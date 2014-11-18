@@ -1,13 +1,11 @@
 # Best Development Environment
 
 
-An opinionated command-line development environment.
+An opinionated command-line development environment for OS X.
 
 ## Tools
 
-* Vagrant
-* VirtualBox
-* Ubuntu 14.04 LTS (Trusty Tahr)
+* Stow
 * Tmux
 * Zsh
 * Prezto
@@ -24,16 +22,8 @@ An opinionated command-line development environment.
 This is a personal backup of my developemtn environment, but you're more than welcome to try it out.
 
 ```sh
-git clone https://github.com/christianbundy/dotfiles
-cd dotfiles
-vagrant up
-vagrant ssh
-```
-
-Once you're logged in, run the user development environment provisioning.
-
-```sh
-/vagrant/bin/vagrant.zsh 
+git clone https://github.com/christianbundy/dotfiles ~/.dotfiles
+stow dotfiles
 ```
 
 ## Support
