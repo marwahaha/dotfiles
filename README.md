@@ -22,8 +22,9 @@ An opinionated command-line development environment for OS X.
 This is a personal backup of my developemtn environment, but you're more than welcome to try it out.
 
 ```sh
-git clone https://github.com/christianbundy/dotfiles ~/.dotfiles
-stow dotfiles
+git clone --recursive https://github.com/christianbundy/dotfiles ~/.dotfiles/christianbundy:dotfiles
+cd .dotfiles
+stow christianbundy:dotfiles
 ```
 
 ## Support
